@@ -17,8 +17,8 @@ export function ContactsProvider({ children }) {
   }
 
   return (
-    <ContactsContext value={{ contacts, createContact }}>
+    <ContactsContext.Provider value={{ contacts, createContact }}>
       {children}
-    </ContactsContext>
+    </ContactsContext.Provider>
   )
 }
